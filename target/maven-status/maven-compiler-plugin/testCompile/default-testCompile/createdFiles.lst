@@ -1,4 +1,0 @@
-com\amit\customer\cucumber\CucumberSpringConfiguration.class
-com\amit\customer\cucumber\CucumberTestRunner.class
-com\amit\customer\CustomerApplicationTests.class
-com\amit\customer\cucumber\stepdefinitions\CustomerStepDefinitions.class

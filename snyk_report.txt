@@ -1,0 +1,171 @@
+
+Testing /mnt/d/github/Devin/customerv1...
+
+Tested 78 dependencies for known issues, found 68 issues, 68 vulnerable paths.
+
+
+Issues to fix by upgrading:
+
+  Upgrade com.h2database:h2@2.1.214 to com.h2database:h2@2.2.220 to fix
+  ✗ Information Exposure [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMH2DATABASE-3146851] in com.h2database:h2@2.1.214
+    introduced by com.h2database:h2@2.1.214
+
+  Upgrade org.springframework.boot:spring-boot-starter-actuator@2.7.6 to org.springframework.boot:spring-boot-starter-actuator@3.3.7 to fix
+  ✗ Server-side Request Forgery (SSRF) [Low Severity][https://security.snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-8539865] in ch.qos.logback:logback-core@1.2.11
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.springframework.boot:spring-boot-starter-logging@2.7.6 > ch.qos.logback:logback-classic@1.2.11 > ch.qos.logback:logback-core@1.2.11
+  ✗ Stack-based Buffer Overflow [Low Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGYAML-3016888] in org.yaml:snakeyaml@1.30
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.yaml:snakeyaml@1.30
+  ✗ Stack-based Buffer Overflow [Low Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGYAML-3016889] in org.yaml:snakeyaml@1.30
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.yaml:snakeyaml@1.30
+  ✗ Stack-based Buffer Overflow [Low Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGYAML-3113851] in org.yaml:snakeyaml@1.30
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.yaml:snakeyaml@1.30
+  ✗ Improper Neutralization of Special Elements [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-8539867] in ch.qos.logback:logback-classic@1.2.11
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.springframework.boot:spring-boot-starter-logging@2.7.6 > ch.qos.logback:logback-classic@1.2.11
+  ✗ Improper Neutralization of Special Elements [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-8539866] in ch.qos.logback:logback-core@1.2.11
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.springframework.boot:spring-boot-starter-logging@2.7.6 > ch.qos.logback:logback-classic@1.2.11 > ch.qos.logback:logback-core@1.2.11
+  ✗ Improper Input Validation [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKBOOT-9804539] in org.springframework.boot:spring-boot-actuator-autoconfigure@2.7.6
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-actuator-autoconfigure@2.7.6
+  ✗ Arbitrary Code Execution [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGYAML-3152153] in org.yaml:snakeyaml@1.30
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.yaml:snakeyaml@1.30
+  ✗ Stack-based Buffer Overflow [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGYAML-3016891] in org.yaml:snakeyaml@1.30
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.yaml:snakeyaml@1.30
+  ✗ Denial of Service (DoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKBOOT-6226862] in org.springframework.boot:spring-boot-actuator@2.7.6
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-actuator-autoconfigure@2.7.6 > org.springframework.boot:spring-boot-actuator@2.7.6
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-6094942] in ch.qos.logback:logback-classic@1.2.11
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.springframework.boot:spring-boot-starter-logging@2.7.6 > ch.qos.logback:logback-classic@1.2.11
+  ✗ Uncontrolled Resource Consumption ('Resource Exhaustion') [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-6097492] in ch.qos.logback:logback-classic@1.2.11
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.springframework.boot:spring-boot-starter-logging@2.7.6 > ch.qos.logback:logback-classic@1.2.11
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-6094943] in ch.qos.logback:logback-core@1.2.11
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.springframework.boot:spring-boot-starter-logging@2.7.6 > ch.qos.logback:logback-classic@1.2.11 > ch.qos.logback:logback-core@1.2.11
+  ✗ Uncontrolled Resource Consumption ('Resource Exhaustion') [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-6097493] in ch.qos.logback:logback-core@1.2.11
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.springframework.boot:spring-boot-starter-logging@2.7.6 > ch.qos.logback:logback-classic@1.2.11 > ch.qos.logback:logback-core@1.2.11
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGYAML-2806360] in org.yaml:snakeyaml@1.30
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.yaml:snakeyaml@1.30
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGYAML-6056527] in org.yaml:snakeyaml@1.30
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.yaml:snakeyaml@1.30
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKBOOT-5564390] in org.springframework.boot:spring-boot-autoconfigure@2.7.6
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-starter@2.7.6 > org.springframework.boot:spring-boot-autoconfigure@2.7.6
+  ✗ Access Restriction Bypass [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKBOOT-5441321] in org.springframework.boot:spring-boot-actuator-autoconfigure@2.7.6
+    introduced by org.springframework.boot:spring-boot-starter-actuator@2.7.6 > org.springframework.boot:spring-boot-actuator-autoconfigure@2.7.6
+
+  Upgrade org.springframework.boot:spring-boot-starter-data-jpa@2.7.6 to org.springframework.boot:spring-boot-starter-data-jpa@3.2.11 to fix
+  ✗ Improper Handling of Case Sensitivity [Low Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-8230365] in org.springframework:spring-core@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-data-jpa@2.7.6 > org.springframework.data:spring-data-jpa@2.7.6 > org.springframework:spring-core@5.3.24
+
+  Upgrade org.springframework.boot:spring-boot-starter-web@2.7.6 to org.springframework.boot:spring-boot-starter-web@3.3.7 to fix
+  ✗ Improper Handling of Case Sensitivity [Low Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-8230368] in org.springframework:spring-webmvc@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework:spring-webmvc@5.3.24
+  ✗ Improper Handling of Case Sensitivity [Low Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-8230366] in org.springframework:spring-web@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework:spring-web@5.3.24
+  ✗ Improper Handling of Case Sensitivity [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-10264469] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Authentication Bypass Using an Alternate Path or Channel [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-10365310] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Denial of Service (DoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-7687447] in org.springframework:spring-web@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework:spring-web@5.3.24
+  ✗ Open Redirect [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-6597980] in org.springframework:spring-web@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework:spring-web@5.3.24
+  ✗ Allocation of Resources Without Limits or Throttling [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-7687446] in org.springframework:spring-expression@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework:spring-webmvc@5.3.24 > org.springframework:spring-expression@5.3.24
+  ✗ Denial of Service (DoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-8384234] in org.springframework:spring-webmvc@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework:spring-webmvc@5.3.24
+  ✗ Improper Input Validation [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-5959654] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Incomplete Cleanup [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-5959972] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Access Restriction Bypass [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-5862028] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Allocation of Resources Without Limits or Throttling [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-5422217] in org.springframework:spring-expression@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework:spring-webmvc@5.3.24 > org.springframework:spring-expression@5.3.24
+  ✗ Unprotected Transport of Credentials [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-3369687] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Allocation of Resources Without Limits or Throttling [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-3369749] in org.springframework:spring-expression@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework:spring-webmvc@5.3.24 > org.springframework:spring-expression@5.3.24
+  ✗ Denial of Service (DoS) [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-3326459] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Allocation of Resources Without Limits or Throttling [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-10365122] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Integer Overflow or Wraparound (new) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-10674391] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Allocation of Resources Without Limits or Throttling (new) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-10676855] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Path Equivalence [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-9396739] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Path Traversal [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-8230373] in org.springframework:spring-webmvc@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework:spring-webmvc@5.3.24
+  ✗ Path Traversal [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-7945490] in org.springframework:spring-webmvc@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework:spring-webmvc@5.3.24
+  ✗ Insufficient Session Expiration [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-7430175] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Allocation of Resources Without Limits or Throttling [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-8073090] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Open Redirect [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-6444790] in org.springframework:spring-web@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework:spring-web@5.3.24
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-6435948] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-6435950] in org.apache.tomcat.embed:tomcat-embed-websocket@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-websocket@9.0.69
+  ✗ Open Redirect [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-6261586] in org.springframework:spring-web@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework:spring-web@5.3.24
+  ✗ Stack-based Buffer Overflow [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-10500754] in com.fasterxml.jackson.core:jackson-core@2.13.4
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-json@2.7.6 > com.fasterxml.jackson.core:jackson-databind@2.13.4.2 > com.fasterxml.jackson.core:jackson-core@2.13.4
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-COMFASTERXMLJACKSONCORE-7569538] in com.fasterxml.jackson.core:jackson-core@2.13.4
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-json@2.7.6 > com.fasterxml.jackson.core:jackson-databind@2.13.4.2 > com.fasterxml.jackson.core:jackson-core@2.13.4
+  ✗ Race Condition (new) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-10676854] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Improper Input Validation [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-6092281] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-5953331] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Time-of-check Time-of-use (TOCTOU) Race Condition [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-8523186] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Time-of-check Time-of-use (TOCTOU) Race Condition [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-8547999] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Uncaught Exception [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-8383920] in org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework.boot:spring-boot-starter-tomcat@2.7.6 > org.apache.tomcat.embed:tomcat-embed-core@9.0.69
+  ✗ Improper Access Control [Critical Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-3369852] in org.springframework:spring-webmvc@5.3.24
+    introduced by org.springframework.boot:spring-boot-starter-web@2.7.6 > org.springframework:spring-webmvc@5.3.24
+
+  Upgrade org.springframework.kafka:spring-kafka@2.8.2 to org.springframework.kafka:spring-kafka@3.3.0 to fix
+  ✗ Improper Handling of Case Sensitivity [Low Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-8230364] in org.springframework:spring-context@5.3.24
+    introduced by org.springframework.kafka:spring-kafka@2.8.2 > org.springframework:spring-context@5.3.24
+  ✗ Files or Directories Accessible to External Parties [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHEKAFKA-8384362] in org.apache.kafka:kafka-clients@3.1.2
+    introduced by org.springframework.kafka:spring-kafka@2.8.2 > org.apache.kafka:kafka-clients@3.1.2
+  ✗ Deserialization of Untrusted Data [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHEKAFKA-3317161] in org.apache.kafka:kafka-clients@3.1.2
+    introduced by org.springframework.kafka:spring-kafka@2.8.2 > org.apache.kafka:kafka-clients@3.1.2
+  ✗ Integer Overflow or Wraparound [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGXERIALSNAPPY-5710959] in org.xerial.snappy:snappy-java@1.1.8.4
+    introduced by org.springframework.kafka:spring-kafka@2.8.2 > org.apache.kafka:kafka-clients@3.1.2 > org.xerial.snappy:snappy-java@1.1.8.4
+  ✗ Integer Overflow or Wraparound [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGXERIALSNAPPY-5710961] in org.xerial.snappy:snappy-java@1.1.8.4
+    introduced by org.springframework.kafka:spring-kafka@2.8.2 > org.apache.kafka:kafka-clients@3.1.2 > org.xerial.snappy:snappy-java@1.1.8.4
+  ✗ Deserialization of Untrusted Data [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKKAFKA-5855818] in org.springframework.kafka:spring-kafka@2.8.2
+    introduced by org.springframework.kafka:spring-kafka@2.8.2
+  ✗ Incorrect Implementation of Authentication Algorithm [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHEKAFKA-8528112] in org.apache.kafka:kafka-clients@3.1.2
+    introduced by org.springframework.kafka:spring-kafka@2.8.2 > org.apache.kafka:kafka-clients@3.1.2
+  ✗ Denial of Service (DoS) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGXERIALSNAPPY-5710960] in org.xerial.snappy:snappy-java@1.1.8.4
+    introduced by org.springframework.kafka:spring-kafka@2.8.2 > org.apache.kafka:kafka-clients@3.1.2 > org.xerial.snappy:snappy-java@1.1.8.4
+  ✗ Allocation of Resources Without Limits or Throttling [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGXERIALSNAPPY-5918282] in org.xerial.snappy:snappy-java@1.1.8.4
+    introduced by org.springframework.kafka:spring-kafka@2.8.2 > org.apache.kafka:kafka-clients@3.1.2 > org.xerial.snappy:snappy-java@1.1.8.4
+
+
+Issues with no direct upgrade or patch:
+  ✗ Server-side Request Forgery (SSRF) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHEKAFKA-10336719] in org.apache.kafka:kafka-clients@3.1.2
+    introduced by org.springframework.kafka:spring-kafka@2.8.2 > org.apache.kafka:kafka-clients@3.1.2
+  This issue was fixed in versions: 3.9.1
+  ✗ Deserialization of Untrusted Data [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHEKAFKA-10350513] in org.apache.kafka:kafka-clients@3.1.2
+    introduced by org.springframework.kafka:spring-kafka@2.8.2 > org.apache.kafka:kafka-clients@3.1.2
+  This issue was fixed in versions: 3.9.1
+  ✗ Deserialization of Untrusted Data [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHEKAFKA-10350567] in org.apache.kafka:kafka-clients@3.1.2
+    introduced by org.springframework.kafka:spring-kafka@2.8.2 > org.apache.kafka:kafka-clients@3.1.2
+  This issue was fixed in versions: 3.9.1
+
+
+
+Organization:      amitbhagra
+Package manager:   maven
+Target file:       pom.xml
+Project name:      com.amit:customer
+Open source:       no
+Project path:      /mnt/d/github/Devin/customerv1
+Licenses:          enabled
+
+

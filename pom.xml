@@ -148,6 +148,12 @@
 					</annotationProcessorPaths>                   
 				</configuration>                                  
 			</plugin>
+			<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-dependency-plugin</artifactId>
+    <version>2.2</version> <!-- or higher -->
+</plugin>
+
 			
 			<!-- JaCoCo Plugin for Code Coverage -->
 			<plugin>
