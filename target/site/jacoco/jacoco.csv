@@ -1,0 +1,13 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+customer,com.amit.customer.web.controllers,CustomerController,14,84,0,6,4,19,0,9,0,6
+customer,com.amit.customer.service.impl,CustomerServiceImpl,0,103,0,6,0,21,0,10,0,7
+customer,com.amit.customer.web.model,CustomerDto,0,31,0,0,0,6,0,9,0,9
+customer,com.amit.customer.exceptions.constraints.validators,DuplicateEmailConstraintValidator,0,13,0,2,0,3,0,4,0,3
+customer,com.amit.customer.mapstruct.mappers,CustomerMapperImpl,6,78,3,5,3,20,3,5,0,4
+customer,com.amit.customer.config,CustomerConfiguration,0,20,0,0,0,6,0,2,0,2
+customer,com.amit.customer,CustomerApplication,5,3,0,0,2,1,1,1,1,1
+customer,com.amit.customer.domain,Customer,0,24,0,0,0,5,0,7,0,7
+customer,com.amit.customer.domain,BaseEntity,27,19,0,0,1,6,4,6,4,6
+customer,com.amit.customer.exceptions,CustomerExceptionHandler,0,43,0,0,0,11,0,3,0,3
+customer,com.amit.customer.exceptions,Violation,9,0,0,0,4,0,1,0,1,0
+customer,com.amit.customer.exceptions,ValidationErrorResponse,15,0,0,0,5,0,3,0,3,0
