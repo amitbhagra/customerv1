@@ -1,0 +1,77 @@
+
+Testing /mnt/d/github/Devin/customerv1...
+
+Tested 84 dependencies for known issues, found 18 issues, 18 vulnerable paths.
+
+
+Issues to fix by upgrading:
+
+  Upgrade org.springframework.kafka:spring-kafka@3.3.0 to org.springframework.kafka:spring-kafka@3.3.6 to fix
+  ✗ Improper Handling of Case Sensitivity [Low Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-10176071] in org.springframework:spring-context@6.1.16
+    introduced by org.springframework.kafka:spring-kafka@3.3.0 > org.springframework:spring-context@6.1.16
+
+
+Issues with no direct upgrade or patch:
+  ✗ Server-side Request Forgery (SSRF) [Low Severity][https://security.snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-8539865] in ch.qos.logback:logback-core@1.5.12
+    introduced by org.springframework.boot:spring-boot-starter-actuator@3.3.7 > org.springframework.boot:spring-boot-starter@3.3.7 > org.springframework.boot:spring-boot-starter-logging@3.3.7 > ch.qos.logback:logback-classic@1.5.12 > ch.qos.logback:logback-core@1.5.12
+  This issue was fixed in versions: 1.3.15, 1.5.13
+  ✗ Improper Neutralization of Special Elements [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-8539866] in ch.qos.logback:logback-core@1.5.12
+    introduced by org.springframework.boot:spring-boot-starter-actuator@3.3.7 > org.springframework.boot:spring-boot-starter@3.3.7 > org.springframework.boot:spring-boot-starter-logging@3.3.7 > ch.qos.logback:logback-classic@1.5.12 > ch.qos.logback:logback-core@1.5.12
+  This issue was fixed in versions: 1.3.15, 1.5.13
+  ✗ Improper Neutralization of Special Elements [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-CHQOSLOGBACK-8539867] in ch.qos.logback:logback-classic@1.5.12
+    introduced by org.springframework.boot:spring-boot-starter-actuator@3.3.7 > org.springframework.boot:spring-boot-starter@3.3.7 > org.springframework.boot:spring-boot-starter-logging@3.3.7 > ch.qos.logback:logback-classic@1.5.12
+  This issue was fixed in versions: 1.3.15, 1.5.13
+  ✗ Server-side Request Forgery (SSRF) [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHEKAFKA-10336719] in org.apache.kafka:kafka-clients@3.7.2
+    introduced by org.springframework.kafka:spring-kafka@3.3.0 > org.apache.kafka:kafka-clients@3.7.2
+  This issue was fixed in versions: 3.9.1
+  ✗ Deserialization of Untrusted Data [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHEKAFKA-10350513] in org.apache.kafka:kafka-clients@3.7.2
+    introduced by org.springframework.kafka:spring-kafka@3.3.0 > org.apache.kafka:kafka-clients@3.7.2
+  This issue was fixed in versions: 3.9.1
+  ✗ Deserialization of Untrusted Data [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHEKAFKA-10350567] in org.apache.kafka:kafka-clients@3.7.2
+    introduced by org.springframework.kafka:spring-kafka@3.3.0 > org.apache.kafka:kafka-clients@3.7.2
+  This issue was fixed in versions: 3.9.1
+  ✗ Files or Directories Accessible to External Parties [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHEKAFKA-8384362] in org.apache.kafka:kafka-clients@3.7.2
+    introduced by org.springframework.kafka:spring-kafka@3.3.0 > org.apache.kafka:kafka-clients@3.7.2
+  This issue was fixed in versions: 3.8.0
+  ✗ Improper Handling of Case Sensitivity [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-10264469] in org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+    introduced by org.springframework.boot:spring-boot-starter-web@3.3.7 > org.springframework.boot:spring-boot-starter-tomcat@3.3.7 > org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+  This issue was fixed in versions: 9.0.105, 10.1.41, 11.0.7
+  ✗ Allocation of Resources Without Limits or Throttling [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-10365122] in org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+    introduced by org.springframework.boot:spring-boot-starter-web@3.3.7 > org.springframework.boot:spring-boot-starter-tomcat@3.3.7 > org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+  This issue was fixed in versions: 9.0.106, 10.1.42, 11.0.8
+  ✗ Authentication Bypass Using an Alternate Path or Channel [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-10365310] in org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+    introduced by org.springframework.boot:spring-boot-starter-web@3.3.7 > org.springframework.boot:spring-boot-starter-tomcat@3.3.7 > org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+  This issue was fixed in versions: 9.0.106, 10.1.42, 11.0.8
+  ✗ Integer Overflow or Wraparound [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-10674391] in org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+    introduced by org.springframework.boot:spring-boot-starter-web@3.3.7 > org.springframework.boot:spring-boot-starter-tomcat@3.3.7 > org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+  This issue was fixed in versions: 9.0.107, 10.1.43, 11.0.9
+  ✗ Allocation of Resources Without Limits or Throttling [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-10676855] in org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+    introduced by org.springframework.boot:spring-boot-starter-web@3.3.7 > org.springframework.boot:spring-boot-starter-tomcat@3.3.7 > org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+  This issue was fixed in versions: 9.0.107, 10.1.43, 11.0.9
+  ✗ Path Equivalence [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-9396739] in org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+    introduced by org.springframework.boot:spring-boot-starter-web@3.3.7 > org.springframework.boot:spring-boot-starter-tomcat@3.3.7 > org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+  This issue was fixed in versions: 9.0.99, 10.1.35, 11.0.3
+  ✗ Improper Cleanup on Thrown Exception [High Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-9905132] in org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+    introduced by org.springframework.boot:spring-boot-starter-web@3.3.7 > org.springframework.boot:spring-boot-starter-tomcat@3.3.7 > org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+  This issue was fixed in versions: 9.0.104, 10.1.40, 11.0.6
+  ✗ Improper Neutralization [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGAPACHETOMCATEMBED-9905136] in org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+    introduced by org.springframework.boot:spring-boot-starter-web@3.3.7 > org.springframework.boot:spring-boot-starter-tomcat@3.3.7 > org.apache.tomcat.embed:tomcat-embed-core@10.1.34
+  This issue was fixed in versions: 9.0.104, 10.1.40, 11.0.6
+  ✗ HTTP Response Splitting [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORK-10345766] in org.springframework:spring-web@6.1.16
+    introduced by org.springframework.boot:spring-boot-starter-web@3.3.7 > org.springframework:spring-web@6.1.16
+  This issue was fixed in versions: 6.1.21, 6.2.8
+  ✗ Improper Input Validation [Medium Severity][https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKBOOT-9804539] in org.springframework.boot:spring-boot-actuator-autoconfigure@3.3.7
+    introduced by org.springframework.boot:spring-boot-starter-actuator@3.3.7 > org.springframework.boot:spring-boot-actuator-autoconfigure@3.3.7
+  This issue was fixed in versions: 3.3.11, 3.4.5
+
+
+
+Organization:      amitbhagra
+Package manager:   maven
+Target file:       pom.xml
+Project name:      com.amit:customer
+Open source:       no
+Project path:      /mnt/d/github/Devin/customerv1
+Licenses:          enabled
+
+

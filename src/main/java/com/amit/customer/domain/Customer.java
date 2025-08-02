@@ -1,6 +1,6 @@
 package com.amit.customer.domain;
 
-import javax.persistence.Entity;
+import jakarta.persistence.Entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
