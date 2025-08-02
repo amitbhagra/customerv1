@@ -1,0 +1,16 @@
+com\amit\customer\exceptions\CustomerExceptionHandler.class
+com\amit\customer\domain\Customer.class
+com\amit\customer\exceptions\ValidationErrorResponse.class
+com\amit\customer\web\model\CustomerDto.class
+com\amit\customer\mapstruct\mappers\CustomerMapper.class
+com\amit\customer\exceptions\constraints\validators\DuplicateEmailConstraintValidator.class
+com\amit\customer\service\CustomerService.class
+com\amit\customer\mapstruct\mappers\CustomerMapperImpl.class
+com\amit\customer\repository\CustomerRepository.class
+com\amit\customer\web\controllers\CustomerController.class
+com\amit\customer\service\impl\CustomerServiceImpl.class
+com\amit\customer\CustomerApplication.class
+com\amit\customer\exceptions\constraints\DuplicateEmailConstraint.class
+com\amit\customer\config\CustomerConfiguration.class
+com\amit\customer\domain\BaseEntity.class
+com\amit\customer\exceptions\Violation.class
