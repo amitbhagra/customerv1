@@ -3,7 +3,7 @@ package com.amit.customer.web.controllers;
 import java.util.List;
 import java.util.Optional;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -89,6 +89,10 @@ public class CustomerController {
 	@DeleteMapping("/{id}")
 	public ResponseEntity<HttpStatus> deleteCustomer(@PathVariable("id") long id) {
 		try {
+			CustomerDto existingCustomer = customerService.getCustomerById(id);
+			if (existingCustomer == null) {
+				return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+			}
 			customerService.deleteCustomer(id);
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		} catch (Exception e) {
