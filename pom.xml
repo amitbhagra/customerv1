@@ -59,6 +59,13 @@
 			<version>2.2.220</version>
 			<scope>runtime</scope>
 		</dependency>
+		<!-- COPILOT MODIFICATION START - KAN-4: Added springdoc-openapi dependency for Swagger/OpenAPI support -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		<!-- COPILOT MODIFICATION END - KAN-4 -->
 		<dependency>
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct</artifactId>
