@@ -16,6 +16,13 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+import java.util.HashMap;
+import java.util.Map;
 
 // COPILOT MODIFICATION START - KAN-4: Added Swagger/OpenAPI imports for API documentation
 import io.swagger.v3.oas.annotations.Operation;
@@ -38,6 +45,7 @@ import com.amit.customer.web.model.CustomerDto;
 // COPILOT MODIFICATION END - KAN-4
 @RestController
 @RequestMapping("/customers")
+@Validated
 public class CustomerController {
 
 	@Autowired
@@ -112,6 +120,16 @@ public class CustomerController {
 		} catch (Exception e) {
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
+	}
+
+	@ExceptionHandler(MethodArgumentNotValidException.class)
+	@ResponseStatus(HttpStatus.BAD_REQUEST)
+	public Map<String, String> handleValidationExceptions(MethodArgumentNotValidException ex) {
+		Map<String, String> errors = new HashMap<>();
+		ex.getBindingResult().getFieldErrors().forEach(error -> {
+			errors.put(error.getField(), error.getDefaultMessage());
+		});
+		return errors;
 	}
 
 	// COPILOT MODIFICATION START - KAN-4: Added Swagger annotations for updateCustomer endpoint
