@@ -12,6 +12,7 @@ import com.amit.customer.mapstruct.mappers.CustomerMapper;
 import com.amit.customer.repository.CustomerRepository;
 import com.amit.customer.service.CustomerService;
 import com.amit.customer.web.model.CustomerDto;
+import com.amit.customer.exceptions.DuplicateEmailException; // Added for duplicate email check
 
 @Service
 public class CustomerServiceImpl implements CustomerService {
@@ -43,6 +44,10 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	public CustomerDto createCustomer(CustomerDto customerDto) {
+		// Check for duplicate email
+		if (customerRepository.existsByEmail(customerDto.getEmail())) {
+			throw new DuplicateEmailException("Duplicate email");
+		}
 		Customer _customer = customerRepository.save(customerMapper.customerDtoToCustomer(customerDto));
 		return customerMapper.customerToCustomerDto(_customer);
 	}
